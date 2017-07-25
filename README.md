@@ -1,9 +1,13 @@
 # XCA -- X Certificate and Key Management
 
+##__Additional Notes__
+
+ * This is a copy of the repository found here https://sourceforge.net/p/xca/code all original work was done by the creators
+ * This repository is to track some minor updates and changes that would allow for use of openssl 1.1.0 and fully build with QT5 as it seems original work has stoped
+ * Feel free to submit pull requests, fixes and bug here on github, I will do my best to look though them just keep in mind I am not the original author
 ## __Release Notes__
 
  * Make a backup copy of your database!
- * Send bugs to christian@hohnstaedt.de
 
 ## __Changelog:__
 
