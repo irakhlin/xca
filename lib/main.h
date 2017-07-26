@@ -15,6 +15,12 @@
 #include "widgets/MainWindow.h"
 #ifdef WIN32
 #include <windows.h>
+#ifdef OPENSSL_SYS_WIN32
+/* Under Win32 these are defined in wincrypt.h */
+#undef X509_NAME
+#undef X509_CERT_PAIR
+#undef X509_EXTENSIONS
+#endif
 #endif
 #include "entropy.h"
 

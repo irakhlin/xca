@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/bigcert.png</file>
+        <file>img/bigcrl.png</file>
+        <file>img/bigcsr.png</file>
+        <file>img/bigkey.png</file>
+        <file>img/bigscard.png</file>
+        <file>img/bigtemp.png</file>
+        <file>img/crl.png</file>
+        <file>img/done.png</file>
+        <file>img/halfkey.png</file>
+        <file>img/invalidcert.png</file>
+        <file>img/invalidcertkey.png</file>
+        <file>img/key.png</file>
+        <file>img/netscape.png</file>
+        <file>img/req.png</file>
+        <file>img/reqkey.png</file>
+        <file>img/revoked.png</file>
+        <file>img/scard.png</file>
+        <file>img/spki.png</file>
+        <file>img/template.png</file>
+        <file>img/validcert.png</file>
+        <file>img/validcertkey.png</file>
+        <file>img/warn.png</file>
+        <file>img/bigcert.bmp</file>
+        <file>img/key.ico</file>
+        <file>img/xca.ico</file>
+        <file>img/xdb.ico</file>
+        <file>img/key.xpm</file>
+        <file>img/xca-32x32.xpm</file>
+    </qresource>
+</RCC>

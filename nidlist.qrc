@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>misc/aia.txt</file>
+        <file>misc/dn.txt</file>
+        <file>misc/eku.txt</file>
+        <file>misc/oids.txt</file>
+    </qresource>
+</RCC>

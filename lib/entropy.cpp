@@ -63,7 +63,7 @@ void Entropy::seed_rng()
 
 #ifdef WIN32
 	if (seed_strength < 16) {
-		RAND_screen();
+//        RAND_seed();
 		seed_strength += 8;
 	}
 #else

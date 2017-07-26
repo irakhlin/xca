@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.1">
 <context>
     <name>About</name>
     <message>
@@ -509,7 +509,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+65"/>
+        <location line="+68"/>
         <source>Export Format</source>
         <translation type="unfinished"></translation>
     </message>
@@ -649,7 +649,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/ExportDialog.ui" line="-115"/>
+        <location filename="../ui/ExportDialog.ui" line="-118"/>
         <source>Name</source>
         <translation type="unfinished">Nombre</translation>
     </message>
@@ -1041,7 +1041,7 @@ This will delete the key &apos;%1&apos; and make it unexportable</source>
     </message>
     <message>
         <location line="+2"/>
-        <location filename="../widgets/MainWindow.cpp" line="+927"/>
+        <location filename="../widgets/MainWindow.cpp" line="+945"/>
         <source>Database</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1051,7 +1051,7 @@ This will delete the key &apos;%1&apos; and make it unexportable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+99"/>
+        <location line="+101"/>
         <source>Errors detected and repaired while deleting outdated items from the database. A backup file was created</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1291,7 +1291,7 @@ This will delete the key &apos;%1&apos; and make it unexportable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../widgets/MainWindow.cpp" line="-633"/>
+        <location filename="../widgets/MainWindow.cpp" line="-651"/>
         <source>no such option: %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1385,7 +1385,7 @@ Please enter the DH parameter bits</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+44"/>
         <source>Error opening file: &apos;%1&apos;: %2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2031,7 +2031,7 @@ though you have declared them as mandatory in the options menu.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../widgets/NewX509_ext.cpp" line="+220"/>
+        <location filename="../widgets/NewX509_ext.cpp" line="+221"/>
         <source>Configfile error on line %1
 </source>
         <translation type="unfinished"></translation>
@@ -2070,7 +2070,7 @@ though you have declared them as mandatory in the options menu.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+27"/>
         <source>OID</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2475,7 +2475,7 @@ In library %3
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../lib/x509name.cpp" line="+106"/>
+        <location filename="../lib/x509name.cpp" line="+116"/>
         <source>Invalid</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2497,7 +2497,7 @@ In library %3
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../lib/func.cpp" line="+444"/>
+        <location filename="../lib/func.cpp" line="+519"/>
         <source>Country code</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2687,7 +2687,7 @@ In library %3
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../lib/x509v3ext.cpp" line="+75"/>
+        <location filename="../lib/x509v3ext.cpp" line="+80"/>
         <source>String &apos;%1&apos; for &apos;%2&apos; contains invalid characters</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3464,7 +3464,7 @@ and so it was not imported</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+18"/>
         <source>The key you selected for signing is not a private one.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3502,7 +3502,7 @@ and so it was not imported</source>
         <translation type="obsolete">Solicitud</translation>
     </message>
     <message>
-        <location line="+80"/>
+        <location line="+79"/>
         <source>PEM chain</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3798,13 +3798,13 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+37"/>
         <source>No issuer given</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+54"/>
-        <location line="+218"/>
+        <location line="+64"/>
+        <location line="+286"/>
         <source>Wrong Size %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3817,7 +3817,7 @@ and thus was not stored</source>
 <context>
     <name>pki_evp</name>
     <message>
-        <location filename="../lib/pki_evp.cpp" line="+180"/>
+        <location filename="../lib/pki_evp.cpp" line="+260"/>
         <source>Failed to decrypt the key (bad password) </source>
         <translation type="unfinished"></translation>
     </message>
@@ -3827,7 +3827,7 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+55"/>
+        <location line="+68"/>
         <source>Please enter the password to decrypt the private key from file:
 %1</source>
         <translation type="unfinished"></translation>
@@ -3838,7 +3838,7 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+79"/>
         <source>Please enter the password to decrypt the private key: &apos;%1&apos;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3854,7 +3854,7 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+85"/>
+        <location line="+103"/>
         <source>Please enter the password to protect the private key: &apos;%1&apos;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3864,17 +3864,17 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+83"/>
+        <location line="+91"/>
         <source>Please enter the password protecting the PKCS#8 key &apos;%1&apos;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+36"/>
         <source>Please enter the export password for the private key &apos;%1&apos;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-261"/>
+        <location line="-291"/>
         <source>Ignoring unsupported private key</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3882,7 +3882,7 @@ and thus was not stored</source>
 <context>
     <name>pki_key</name>
     <message>
-        <location filename="../lib/pki_key.cpp" line="+142"/>
+        <location filename="../lib/pki_key.cpp" line="+157"/>
         <source>Successfully imported the %1 public key &apos;%2&apos;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3917,7 +3917,7 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+188"/>
+        <location line="+255"/>
         <source>Common</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3949,7 +3949,7 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+113"/>
+        <location line="+155"/>
         <source>Failed writing to %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3988,7 +3988,7 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+58"/>
         <source>Please enter the password to encrypt the PKCS#12 file</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4029,17 +4029,17 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+226"/>
+        <location line="+272"/>
         <source>Delete the private key &apos;%1&apos; from the token &apos;%2 (#%3)&apos; ?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+65"/>
+        <location line="+74"/>
         <source>This Key is already on the token</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+75"/>
+        <location line="+110"/>
         <source>PIN input aborted</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4049,7 +4049,7 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+103"/>
+        <location line="+111"/>
         <source>Please insert card: %1 %2 [%3] with Serial: %4</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4064,7 +4064,7 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+55"/>
+        <location line="+63"/>
         <source>Wrong Size %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4085,17 +4085,17 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-98"/>
+        <location line="-106"/>
         <source>Illegal Key generation method</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+76"/>
         <source>Ignoring unsupported token key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+43"/>
+        <location line="+42"/>
         <source>Failed to initialize the key on the token</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4182,7 +4182,7 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+170"/>
+        <location line="+200"/>
         <source>This certificate is already on the security token</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4192,13 +4192,13 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+129"/>
+        <location line="+149"/>
         <source>There is no key for signing !</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+58"/>
-        <location line="+538"/>
+        <location line="+556"/>
         <source>Wrong Size %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4261,7 +4261,7 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+282"/>
+        <location line="+322"/>
         <source>Signed</source>
         <translation type="unfinished">Firma</translation>
     </message>

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>misc/CA.xca</file>
+        <file>misc/HTTPS_client.xca</file>
+        <file>misc/HTTPS_server.xca</file>
+    </qresource>
+</RCC>

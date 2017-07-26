@@ -33,6 +33,8 @@
 
 #ifdef WIN32
 #include <windows.h>
+#include <string.h>
+#include <shlwapi.h>
 #include <shlobj.h>
 #else
 /* for htons() */
@@ -47,7 +49,7 @@ QPixmap *loadImg(const char *name )
 QStringList getLibExtensions()
 {
 	QStringList l;
-#if defined(_WIN32) || defined(USE_CYGWIN)
+#if defined(_WIN32) || defined(USE_CYGWIN) || defined(__MINGW64__)
 	l << QString("*.dll") << QString("*.DLL");
 #elif defined(Q_WS_MAC)
 	l << QString("*.dylib") << QString("*.so");
@@ -65,37 +67,41 @@ QStringList getLibExtensions()
 QString getPrefix()
 {
 #ifdef WIN32
-	static char inst_dir[100] = "";
-	char *p;
+	static wchar_t inst_dir[100] = L"";
+	wchar_t *p;
 	ULONG dwLength = 100;
 	LONG lRc;
 	HKEY hKey;
-
-	if (inst_dir[0] != '\0') {
+	QString temp;
+	if (inst_dir[0] != L'\0') {
 		/* if we already once discovered the directory just return it */
-		return QString(inst_dir);
+		//return QString(inst_dir);
+		temp = QString::fromWCharArray(inst_dir);
+		return temp;
 	}
 	// fallback: directory of xca.exe
 	GetModuleFileName(0, inst_dir, dwLength - 1);
-	p = strrchr(inst_dir, '\\');
+	p = wcsrchr(inst_dir, L'\\');
 	if (p) {
-		*p = '\0';
-		return QString(inst_dir);
+		*p = L'\0';
+		temp = QString::fromWCharArray(inst_dir);
+		return temp;
 	}
 	p = inst_dir;
-	*p = '\0';
-	lRc = RegOpenKeyEx(HKEY_LOCAL_MACHINE, "Software\\xca", 0, KEY_READ, &hKey);
+	*p = L'\0';
+	lRc = RegOpenKeyEx(HKEY_LOCAL_MACHINE, L"Software\\xca", 0, KEY_READ, &hKey);
 	if (lRc != ERROR_SUCCESS) {
-		XCA_WARN("Registry Key: 'HKEY_LOCAL_MACHINE->Software->xca' not found");
-		return QString(inst_dir);
+		//XCA_WARN(QString("Registry Key: 'HKEY_LOCAL_MACHINE->Software->xca' not found"));
+		temp = QString::fromWCharArray(inst_dir);
+		return temp;
 	}
-	lRc = RegQueryValueEx(hKey, "Install_Dir", NULL, NULL,
-			(unsigned char *)inst_dir, &dwLength);
+	lRc = RegQueryValueEx(hKey, L"Install_Dir", NULL, NULL, (unsigned char *)inst_dir, &dwLength);
 	if (lRc != ERROR_SUCCESS){
-		XCA_WARN("Registry Key: 'HKEY_LOCAL_MACHINE->Software->xca->Install_Dir' not found");
+		//XCA_WARN(QString("Registry Key: 'HKEY_LOCAL_MACHINE->Software->xca->Install_Dir' not found"));
 	}
 	lRc = RegCloseKey(hKey);
-	return QString(inst_dir);
+		temp = QString::fromWCharArray(inst_dir);
+		return temp;
 
 #elif defined(Q_WS_MAC)
 	// since this is platform-specific anyway,
@@ -117,11 +123,11 @@ QString getHomeDir()
 	QString hd;
 #ifdef WIN32
 	LPITEMIDLIST pidl = NULL;
-	TCHAR buf[255] = "";
+	wchar_t buf[255] = L"";
 	if (SUCCEEDED(SHGetSpecialFolderLocation(NULL, CSIDL_PERSONAL, &pidl))) {
 		SHGetPathFromIDList(pidl, buf);
 	}
-	hd = buf;
+	hd = QString::fromWCharArray(buf);
 #else
 	hd = QDir::homePath();
 #endif
@@ -133,11 +139,11 @@ QString getLibDir()
 	QString hd;
 #ifdef WIN32
 	LPITEMIDLIST pidl = NULL;
-	TCHAR buf[255] = "";
+	wchar_t buf[255] = L"";
 		if (SUCCEEDED(SHGetSpecialFolderLocation(NULL, CSIDL_SYSTEM, &pidl))) {
 		SHGetPathFromIDList(pidl, buf);
 	}
-	hd = buf;
+	hd = QString::fromWCharArray(buf);
 #else
 	hd = QString("/usr/lib");
 #endif
@@ -162,11 +168,11 @@ QString getUserSettingsDir()
 	QString rv;
 #ifdef WIN32
 	LPITEMIDLIST pidl = NULL;
-	TCHAR buf[255] = "";
+	wchar_t buf[255] = L"";
 	if (SUCCEEDED(SHGetSpecialFolderLocation(NULL, CSIDL_APPDATA, &pidl))) {
 	SHGetPathFromIDList(pidl, buf);
 	}
-	rv = buf;
+	rv = QString::fromWCharArray(buf);
 	rv += QDir::separator();
 	rv += "xca";
 #elif defined(Q_WS_MAC)

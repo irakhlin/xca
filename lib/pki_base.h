@@ -7,7 +7,7 @@
 
 #ifndef __PKI_BASE_H
 #define __PKI_BASE_H
-
+#define NOCRYPT
 #include <openssl/err.h>
 #include <QString>
 #include <QListView>

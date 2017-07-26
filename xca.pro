@@ -1,11 +1,18 @@
-
 TEMPLATE = app
 TARGET = xca
 DEPENDPATH += . lang lib ui widgets
 INCLUDEPATH += . lib widgets
-
-RESOURCES = img/imgres.rcc
+QT += core gui widgets
+QMAKE_CFLAGS += -static -static-libgcc -static-libstdc++ -lstdc++ -lpthread -IC:/msys64/home/irakhlin/xca-git/libs/include
+QMAKE_CFLAGS += -libgcc-static -libstdc-static
+RESOURCES = icons.qrc \
+            nidlist.qrc \
+            templates.qrc
+#        help_resource.qrc \
+#        translations.qrc \
+#        img/imgres.rcc \
 RC_FILE = img/w32res.rc
+CONFIG += release
 
 macx {
 	ICON = img/xca-mac-icon.icns
@@ -15,9 +22,7 @@ macx {
 	XCA_RESOURCES.path = Contents/Resources
 	QMAKE_BUNDLE_DATA += XCA_RESOURCES
 }
-
-LIBS += -lcrypto -lltdl
-QMAKE_CXXFLAGS = -DPREFIX=\\\"/usr/local\\\" -DETC=\\\"/etc\\\" -DDOCDIR=\\\"/usr/local/doc/xca\\\" -Werror
+LIBS += -static -lws2_32 -lgdi32 -lcrypt32 -lwsock32 -lltdl -ldl -lpsapi -lstdc++ C:/msys64/home/irakhlin/xca-git/libs/lib/libcrypto.a -lcrypt32
 
 # Input
 HEADERS += local.h \
@@ -92,28 +97,28 @@ HEADERS += local.h \
            widgets/OidResolver.h \
            widgets/XcaProxyModel.h
 
-FORMS += ui/About.ui \
-         ui/CaProperties.ui \
-         ui/CertDetail.ui \
-         ui/CertExtend.ui \
-         ui/CrlDetail.ui \
-         ui/ExportDialog.ui \
-         ui/Help.ui \
-         ui/ImportMulti.ui \
-         ui/KeyDetail.ui \
-         ui/MainWindow.ui \
-         ui/NewCrl.ui \
-         ui/NewKey.ui \
-         ui/NewX509.ui \
-         ui/Options.ui \
-         ui/PwDialog.ui \
-         ui/Revoke.ui \
-         ui/SelectToken.ui \
-         ui/TrustState.ui \
-         ui/SearchPkcs11.ui \
-         ui/v3ext.ui \
-         ui/OidResolver.ui \
-	 ui/RevocationList.ui
+FORMS +=   ui/About.ui \
+           ui/CaProperties.ui \
+           ui/CertDetail.ui \
+           ui/CertExtend.ui \
+           ui/CrlDetail.ui \
+           ui/ExportDialog.ui \
+           ui/Help.ui \
+           ui/ImportMulti.ui \
+           ui/KeyDetail.ui \
+           ui/MainWindow.ui \
+           ui/NewCrl.ui \
+           ui/NewKey.ui \
+           ui/NewX509.ui \
+           ui/Options.ui \
+           ui/PwDialog.ui \
+           ui/Revoke.ui \
+           ui/SelectToken.ui \
+           ui/TrustState.ui \
+           ui/SearchPkcs11.ui \
+           ui/v3ext.ui \
+           ui/OidResolver.ui \
+           ui/RevocationList.ui
 
 SOURCES += lib/asn1int.cpp \
            lib/asn1time.cpp \
@@ -178,13 +183,19 @@ SOURCES += lib/asn1int.cpp \
            widgets/SearchPkcs11.cpp \
            widgets/RevocationList.cpp \
            widgets/XcaTreeView.cpp \
-	   widgets/CertTreeView.cpp \
-	   widgets/KeyTreeView.cpp \
-	   widgets/ReqTreeView.cpp \
-	   widgets/TempTreeView.cpp \
-	   widgets/X509SuperTreeView.cpp \
-	   widgets/XcaHeaderView.cpp \
-	   widgets/OidResolver.cpp \
-	   widgets/XcaProxyModel.cpp
+           widgets/CertTreeView.cpp \
+           widgets/KeyTreeView.cpp \
+           widgets/ReqTreeView.cpp \
+           widgets/TempTreeView.cpp \
+           widgets/X509SuperTreeView.cpp \
+           widgets/XcaHeaderView.cpp \
+           widgets/OidResolver.cpp \
+           widgets/XcaProxyModel.cpp
 
-TRANSLATIONS += lang/xca_de.ts lang/xca_es.ts lang/xca_ru.ts lang/xca.ts lang/xca_tr.ts lang/xca_fr.ts lang/xca_hr.ts
+TRANSLATIONS += lang/xca_de.ts \
+           lang/xca_es.ts \
+           lang/xca_ru.ts \
+           lang/xca.ts \
+           lang/xca_tr.ts \
+           lang/xca_fr.ts \
+           lang/xca_hr.ts

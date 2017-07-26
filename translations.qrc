@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>lang/xca_de.qm</file>
+        <file>lang/xca_es.qm</file>
+        <file>lang/xca_ru.qm</file>
+        <file>lang/xca_fr.qm</file>
+        <file>lang/xca_hr.qm</file>
+        <file>lang/xca_tr.qm</file>
+        <file>lang/qt_de.qm</file>
+        <file>lang/qt_es.qm</file>
+        <file>lang/qt_fr.qm</file>
+        <file>lang/qt_ru.qm</file>
+    </qresource>
+</RCC>

@@ -15,11 +15,19 @@
 #define XCA_TITLE PACKAGE_NAME
 #endif
 
+#include <openssl/e_os2.h>
+#undef X509_NAME
+
 #include <qglobal.h>
 #include "local.h"
 
 #ifdef WIN32
 #include <windows.h>
+#  undef X509_NAME
+#  undef X509_EXTENSIONS
+#  undef PKCS7_ISSUER_AND_SERIAL
+#  undef OCSP_REQUEST
+#  undef OCSP_RESPONSE
 #endif
 
 #include <openssl/opensslv.h>

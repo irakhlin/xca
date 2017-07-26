@@ -221,37 +221,37 @@ NIDlist *MainWindow::read_nidlist(QString name)
 
 void MainWindow::init_images()
 {
-	keyImg = loadImg("bigkey.png");
-	csrImg = loadImg("bigcsr.png");
-	certImg = loadImg("bigcert.png");
-	tempImg = loadImg("bigtemp.png");
-	nsImg = loadImg("netscape.png");
-	revImg = loadImg("bigcrl.png");
-	scardImg = loadImg("bigscard.png");
-	appIco = loadImg("key.xpm");
-	doneIco = loadImg("done.png");
-	warnIco = loadImg("warn.png");
+    keyImg = loadImg("img/bigkey.png");
+    csrImg = loadImg("img/bigcsr.png");
+    certImg = loadImg("img/bigcert.png");
+    tempImg = loadImg("img/bigtemp.png");
+    nsImg = loadImg("img/netscape.png");
+    revImg = loadImg("img/bigcrl.png");
+    scardImg = loadImg("img/bigscard.png");
+    appIco = loadImg("img/key.xpm");
+    doneIco = loadImg("img/done.png");
+    warnIco = loadImg("img/warn.png");
 	bigKey->setPixmap(*keyImg);
 	bigCsr->setPixmap(*csrImg);
 	bigCert->setPixmap(*certImg);
 	bigTemp->setPixmap(*tempImg);
 	bigRev->setPixmap(*revImg);
 	setWindowIcon(*appIco);
-	pki_evp::icon[0] = loadImg("key.png");
-	pki_evp::icon[1] = loadImg("halfkey.png");
-	pki_scard::icon[0] = loadImg("scard.png");
-	pki_x509req::icon[0] = loadImg("req.png");
-	pki_x509req::icon[1] = loadImg("reqkey.png");
-	pki_x509req::icon[2] = loadImg("spki.png");
+    pki_evp::icon[0] = loadImg("img/key.png");
+    pki_evp::icon[1] = loadImg("img/halfkey.png");
+    pki_scard::icon[0] = loadImg("img/scard.png");
+    pki_x509req::icon[0] = loadImg("img/req.png");
+    pki_x509req::icon[1] = loadImg("img/reqkey.png");
+    pki_x509req::icon[2] = loadImg("img/spki.png");
 	pki_x509req::icon[3] = doneIco;
-	pki_x509::icon[0] = loadImg("validcert.png");
-	pki_x509::icon[1] = loadImg("validcertkey.png");
-	pki_x509::icon[2] = loadImg("invalidcert.png");
-	pki_x509::icon[3] = loadImg("invalidcertkey.png");
-	pki_x509::icon[4] = loadImg("revoked.png");
+    pki_x509::icon[0] = loadImg("img/validcert.png");
+    pki_x509::icon[1] = loadImg("img/validcertkey.png");
+    pki_x509::icon[2] = loadImg("img/invalidcert.png");
+    pki_x509::icon[3] = loadImg("img/invalidcertkey.png");
+    pki_x509::icon[4] = loadImg("img/revoked.png");
 	pki_x509::icon[5] = doneIco;
-	pki_temp::icon = loadImg("template.png");
-	pki_crl::icon = loadImg("crl.png");
+    pki_temp::icon = loadImg("img/template.png");
+    pki_crl::icon = loadImg("img/crl.png");
 }
 
 void MainWindow::read_cmdline(int argc, char *argv[])

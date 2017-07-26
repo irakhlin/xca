@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ru_RU">
+<TS version="2.1" language="ru_RU">
 <context>
     <name>About</name>
     <message>
@@ -558,7 +558,7 @@
         <translation type="unfinished">Имя файла</translation>
     </message>
     <message>
-        <location line="+65"/>
+        <location line="+68"/>
         <source>Export Format</source>
         <translation type="unfinished">Формат экспорта</translation>
     </message>
@@ -1209,7 +1209,7 @@ This will delete the key &apos;%1&apos; and make it unexportable</source>
     </message>
     <message>
         <location filename="../widgets/MW_database.cpp" line="+168"/>
-        <location filename="../widgets/MainWindow.cpp" line="+140"/>
+        <location filename="../widgets/MainWindow.cpp" line="+158"/>
         <source>Database</source>
         <translation>База данных</translation>
     </message>
@@ -1219,7 +1219,7 @@ This will delete the key &apos;%1&apos; and make it unexportable</source>
         <translation>Нет удаленных записей</translation>
     </message>
     <message>
-        <location line="+99"/>
+        <location line="+101"/>
         <source>Errors detected and repaired while deleting outdated items from the database. A backup file was created</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1328,7 +1328,7 @@ This will delete the key &apos;%1&apos; and make it unexportable</source>
         <translation>Дамп базы данных ( *.dump );;All files ( * )</translation>
     </message>
     <message>
-        <location filename="../widgets/MainWindow.cpp" line="-547"/>
+        <location filename="../widgets/MainWindow.cpp" line="-565"/>
         <source>Import PEM data</source>
         <translation>Импорт</translation>
     </message>
@@ -1391,7 +1391,7 @@ Please enter the DH parameter bits</source>
         <translation type="unfinished">нет таких вариантов: %1</translation>
     </message>
     <message>
-        <location filename="../widgets/MW_database.cpp" line="-172"/>
+        <location filename="../widgets/MW_database.cpp" line="-174"/>
         <source>Using or exporting private keys will not be possible without providing the correct password</source>
         <translation type="unfinished">Использование или экспорт закрытых ключей будет невозможным без ввода правильного пароля</translation>
     </message>
@@ -1426,7 +1426,7 @@ Please enter the DH parameter bits</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+291"/>
+        <location line="+305"/>
         <source>Error opening file: &apos;%1&apos;: %2</source>
         <translation type="unfinished">Ошибка открытия файла: &apos;%1&apos;: %2</translation>
     </message>
@@ -2194,7 +2194,7 @@ though you have declared them as mandatory in the options menu.</source>
         <translation type="unfinished">Ошибки</translation>
     </message>
     <message>
-        <location filename="../widgets/NewX509_ext.cpp" line="+220"/>
+        <location filename="../widgets/NewX509_ext.cpp" line="+221"/>
         <source>Configfile error on line %1
 </source>
         <translation type="unfinished">Ошибка кофигурационного файла в строке %1
@@ -2219,7 +2219,7 @@ though you have declared them as mandatory in the options menu.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+27"/>
         <source>OID</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2513,7 +2513,7 @@ Especially EC and DSA are only defined with SHA1 in the PKCS#11 specification.</
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../lib/x509name.cpp" line="+106"/>
+        <location filename="../lib/x509name.cpp" line="+116"/>
         <source>Invalid</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2650,7 +2650,7 @@ In library %3
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../lib/func.cpp" line="+444"/>
+        <location filename="../lib/func.cpp" line="+519"/>
         <source>Country code</source>
         <translation type="unfinished">Код страны (C)</translation>
     </message>
@@ -2840,7 +2840,7 @@ In library %3
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../lib/x509v3ext.cpp" line="+75"/>
+        <location filename="../lib/x509v3ext.cpp" line="+80"/>
         <source>String &apos;%1&apos; for &apos;%2&apos; contains invalid characters</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3641,7 +3641,7 @@ and will be completed by the new, private part of the key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+18"/>
         <source>The key you selected for signing is not a private one.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3690,7 +3690,7 @@ and will be completed by the new, private part of the key</source>
         <translation type="obsolete">Доверие</translation>
     </message>
     <message>
-        <location line="-465"/>
+        <location line="-466"/>
         <source>CA</source>
         <translation>ЦС</translation>
     </message>
@@ -3817,7 +3817,7 @@ and so it was not imported</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-208"/>
+        <location line="-207"/>
         <source>Store the certificate to the key on the token &apos;%1 (#%2)&apos; ?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4058,17 +4058,17 @@ and thus was not stored</source>
 <context>
     <name>pki_crl</name>
     <message>
-        <location filename="../lib/pki_crl.cpp" line="+92"/>
+        <location filename="../lib/pki_crl.cpp" line="+107"/>
         <source>No issuer given</source>
         <translation>Данного издателя несуществует</translation>
     </message>
     <message>
-        <location line="+245"/>
+        <location line="+323"/>
         <source>unknown</source>
         <translation>неизвестный</translation>
     </message>
     <message>
-        <location line="-267"/>
+        <location line="-360"/>
         <source>Unable to load the revocation list in file %1. Tried PEM and DER formatted CRL.</source>
         <translation>Не удается загрузить список отзыва сертификатов из файла %1. Формат файла, содержащий CRL должен быть PEM или DER.</translation>
     </message>
@@ -4093,8 +4093,8 @@ and thus was not stored</source>
         <translation>Удалить %1 списки отзыва: %2?</translation>
     </message>
     <message>
-        <location line="+96"/>
-        <location line="+218"/>
+        <location line="+121"/>
+        <location line="+286"/>
         <source>Wrong Size %1</source>
         <translation>Неправильный размер %1</translation>
     </message>
@@ -4102,18 +4102,18 @@ and thus was not stored</source>
 <context>
     <name>pki_evp</name>
     <message>
-        <location filename="../lib/pki_evp.cpp" line="+180"/>
+        <location filename="../lib/pki_evp.cpp" line="+260"/>
         <source>Failed to decrypt the key (bad password) </source>
         <translation type="unfinished">Не удалось расшифровать ключ (неверный пароль)</translation>
     </message>
     <message>
-        <location line="+197"/>
+        <location line="+222"/>
         <location line="+11"/>
         <source>Password input aborted</source>
         <translation></translation>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+100"/>
         <source>Please enter the password to protect the private key: &apos;%1&apos;</source>
         <translation>Пожалуйста, введите пароль для защиты закрытого ключа &apos;%1&apos;</translation>
     </message>
@@ -4122,12 +4122,12 @@ and thus was not stored</source>
         <translation type="obsolete">Не удается загрузить закрытый ключ из файла %1. Формат файла должен быть PEM или DER.</translation>
     </message>
     <message>
-        <location line="-280"/>
+        <location line="-323"/>
         <source>Please enter the password to decrypt the private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+55"/>
+        <location line="+68"/>
         <source>Please enter the password to decrypt the private key from file:
 %1</source>
         <translation type="unfinished"></translation>
@@ -4138,32 +4138,32 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+44"/>
         <source>Ignoring unsupported private key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+35"/>
         <source>Please enter the password to decrypt the private key: &apos;%1&apos;</source>
         <translation type="unfinished">Пожалуйста, введите пароль для расшифровки закрытого ключа: &apos;%1&apos;</translation>
     </message>
     <message>
-        <location line="+111"/>
+        <location line="+129"/>
         <source>Please enter the database password for encrypting the key</source>
         <translation>Пожалуйста, введите пароль к базе данных для шифрования ключа</translation>
     </message>
     <message>
-        <location line="+83"/>
+        <location line="+91"/>
         <source>Please enter the password protecting the PKCS#8 key &apos;%1&apos;</source>
         <translation>Пожалуйста, введите пароль для защиты PKCS#8 ключа &apos;%1&apos;</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+36"/>
         <source>Please enter the export password for the private key &apos;%1&apos;</source>
         <translation>Пожалуйста, введите пароль для экспорта закрытого ключа &apos;%1&apos;</translation>
     </message>
     <message>
-        <location line="-218"/>
+        <location line="-245"/>
         <source>Please enter the database password for decrypting the key &apos;%1&apos;</source>
         <translation>Пожалуйста, введите пароль к базе данных для расшифровки ключа  &apos;%1&apos;</translation>
     </message>
@@ -4171,7 +4171,7 @@ and thus was not stored</source>
 <context>
     <name>pki_key</name>
     <message>
-        <location filename="../lib/pki_key.cpp" line="+142"/>
+        <location filename="../lib/pki_key.cpp" line="+157"/>
         <source>Successfully imported the %1 public key &apos;%2&apos;</source>
         <translation type="unfinished">Открытый %1 ключ &apos;%2&apos; импортирован успешно</translation>
     </message>
@@ -4206,7 +4206,7 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+188"/>
+        <location line="+255"/>
         <source>Common</source>
         <translation>Общий</translation>
     </message>
@@ -4233,12 +4233,12 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+113"/>
+        <location line="+155"/>
         <source>Failed writing to %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-153"/>
+        <location line="-195"/>
         <source>PIN</source>
         <translation>ПИН</translation>
     </message>
@@ -4261,7 +4261,7 @@ and thus was not stored</source>
 <context>
     <name>pki_pkcs12</name>
     <message>
-        <location filename="../lib/pki_pkcs12.cpp" line="+112"/>
+        <location filename="../lib/pki_pkcs12.cpp" line="+118"/>
         <source>Please enter the password to encrypt the PKCS#12 file</source>
         <translation>Пожалуйста, введите пароль для шифрования PKCS#12 файла</translation>
     </message>
@@ -4271,7 +4271,7 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-68"/>
+        <location line="-74"/>
         <source>Unable to load the PKCS#12 (pfx) file %1.</source>
         <translation>Не удается загрузить PKCS#12 (pfx) файл %1.</translation>
     </message>
@@ -4298,17 +4298,17 @@ and thus was not stored</source>
 <context>
     <name>pki_scard</name>
     <message>
-        <location filename="../lib/pki_scard.cpp" line="+354"/>
+        <location filename="../lib/pki_scard.cpp" line="+409"/>
         <source>This Key is already on the token</source>
         <translation type="unfinished">Этот ключ уже есть на Токене безопасности</translation>
     </message>
     <message>
-        <location line="+87"/>
+        <location line="+122"/>
         <source>Unable to find copied key on the token</source>
         <translation type="unfinished">Не удается найти копию ключа на Токене безопасности</translation>
     </message>
     <message>
-        <location line="+131"/>
+        <location line="+139"/>
         <source>Public Key missmatch. Please re-import card</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4318,7 +4318,7 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+75"/>
+        <location line="+83"/>
         <location line="+13"/>
         <source>Failed to find the key on the token</source>
         <translation type="unfinished"></translation>
@@ -4329,12 +4329,12 @@ and thus was not stored</source>
         <translation type="unfinished">Неверный PIN для этого Токена безопасности</translation>
     </message>
     <message>
-        <location line="-438"/>
+        <location line="-498"/>
         <source>Delete the private key &apos;%1&apos; from the token &apos;%2 (#%3)&apos; ?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-230"/>
+        <location line="-276"/>
         <source>Successfully imported the token key &apos;%1&apos;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4354,12 +4354,12 @@ and thus was not stored</source>
         <translation type="unfinished">Удалить %1 ключ: %2?</translation>
     </message>
     <message>
-        <location line="+366"/>
+        <location line="+456"/>
         <source>PIN input aborted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+115"/>
+        <location line="+123"/>
         <source>Please insert card: %1 %2 [%3] with Serial: %4</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4369,12 +4369,12 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+76"/>
         <source>Ignoring unsupported token key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+3"/>
         <source>Wrong Size %1</source>
         <translation type="unfinished">Неправильный размер %1</translation>
     </message>
@@ -4474,12 +4474,12 @@ and thus was not stored</source>
         <translation type="unfinished">Удалить %1 сертификатов: %2?</translation>
     </message>
     <message>
-        <location line="+269"/>
+        <location line="+299"/>
         <source>Delete the certificate &apos;%1&apos; from the token &apos;%2 (#%3)&apos;?</source>
         <translation>Удалить сертификат &apos;%1&apos; из Токена &apos;%2 (#%3)&apos;?</translation>
     </message>
     <message>
-        <location line="+522"/>
+        <location line="+560"/>
         <source>Not trusted</source>
         <translation>Доверия нет</translation>
     </message>
@@ -4504,17 +4504,17 @@ and thus was not stored</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-427"/>
+        <location line="-445"/>
         <source>There is no key for signing !</source>
         <translation type="unfinished">Не существует ключа для подписания !</translation>
     </message>
     <message>
-        <location line="-361"/>
+        <location line="-411"/>
         <source>Unable to load the certificate in file %1. Tried PEM and DER certificate.</source>
         <translation>Не удается загрузить сертификат из файла %1. Формат файла должен быть PEM или DER.</translation>
     </message>
     <message>
-        <location line="+170"/>
+        <location line="+200"/>
         <source>This certificate is already on the security token</source>
         <translation>Этот сертификат уже есть на Токене</translation>
     </message>
@@ -4523,8 +4523,8 @@ and thus was not stored</source>
         <translation type="obsolete">CRL истекает: %1</translation>
     </message>
     <message>
-        <location line="+249"/>
-        <location line="+538"/>
+        <location line="+269"/>
+        <location line="+556"/>
         <source>Wrong Size %1</source>
         <translation type="unfinished">Неправильный размер %1</translation>
     </message>
@@ -4562,7 +4562,7 @@ and thus was not stored</source>
         <translation type="unfinished">Не удается загрузить запрос на создание сертификата из файла %1. Формат файла должен быть PEM или DER.</translation>
     </message>
     <message>
-        <location line="+282"/>
+        <location line="+322"/>
         <source>Signed</source>
         <translation>Подписан</translation>
     </message>

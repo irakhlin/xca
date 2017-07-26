@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.1">
 <context>
     <name>About</name>
     <message>
@@ -515,7 +515,7 @@
         <translation>Nom du fichier</translation>
     </message>
     <message>
-        <location line="+65"/>
+        <location line="+68"/>
         <source>Export Format</source>
         <translation>Format d&apos;exportation</translation>
     </message>
@@ -1026,7 +1026,7 @@ Cela détruirait la clé &apos;%1&apos; et la rendrait non-exportable.</translat
     </message>
     <message>
         <location line="+2"/>
-        <location filename="../widgets/MainWindow.cpp" line="+927"/>
+        <location filename="../widgets/MainWindow.cpp" line="+945"/>
         <source>Database</source>
         <translation>Base de donnée</translation>
     </message>
@@ -1036,7 +1036,7 @@ Cela détruirait la clé &apos;%1&apos; et la rendrait non-exportable.</translat
         <translation>Aucun objet détruit n&apos;a été trouvé</translation>
     </message>
     <message>
-        <location line="+99"/>
+        <location line="+101"/>
         <source>Errors detected and repaired while deleting outdated items from the database. A backup file was created</source>
         <translation>Des erreurs ont été détectées et réparées lors de la destruction des éléments échus de la base de données. Un fichier de sauvegarde a été créé</translation>
     </message>
@@ -1281,7 +1281,7 @@ Cela détruirait la clé &apos;%1&apos; et la rendrait non-exportable.</translat
         <translation>Importer quand-même</translation>
     </message>
     <message>
-        <location filename="../widgets/MainWindow.cpp" line="-633"/>
+        <location filename="../widgets/MainWindow.cpp" line="-651"/>
         <source>no such option: %1</source>
         <translation>&apos;%1&apos; n&apos;est pas une option</translation>
     </message>
@@ -1378,7 +1378,7 @@ Please enter the DH parameter bits</source>
 Saisir le nombre de bits du paramètre de Diffie-Hellman SVP</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+44"/>
         <source>Error opening file: &apos;%1&apos;: %2</source>
         <translation>Erreur lors de l&apos;ouverture du fichier: &apos;%1&apos;: %2</translation>
     </message>
@@ -2039,7 +2039,7 @@ bien que vous les avez déclarées comme obligatoires dans le menu des options.<
         <translation>Modifier les extensions</translation>
     </message>
     <message>
-        <location filename="../widgets/NewX509_ext.cpp" line="+220"/>
+        <location filename="../widgets/NewX509_ext.cpp" line="+221"/>
         <source>Configfile error on line %1
 </source>
         <translation>Erreur dans le fichier de configuration à la ligne %1
@@ -2064,7 +2064,7 @@ bien que vous les avez déclarées comme obligatoires dans le menu des options.<
         <translation type="unfinished">Chercher</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+27"/>
         <source>OID</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2480,7 +2480,7 @@ Dans la bibliothèque %3
 %4</translation>
     </message>
     <message>
-        <location filename="../lib/x509name.cpp" line="+106"/>
+        <location filename="../lib/x509name.cpp" line="+116"/>
         <source>Invalid</source>
         <translation>Invalide</translation>
     </message>
@@ -2495,7 +2495,7 @@ Dans la bibliothèque %3
         <translation>%1 est plus long que %2 octets: &apos;%3&apos;</translation>
     </message>
     <message>
-        <location filename="../lib/func.cpp" line="+444"/>
+        <location filename="../lib/func.cpp" line="+519"/>
         <source>Country code</source>
         <translation>Code du pays</translation>
     </message>
@@ -2685,7 +2685,7 @@ Dans la bibliothèque %3
         <translation>Commentaire</translation>
     </message>
     <message>
-        <location filename="../lib/x509v3ext.cpp" line="+75"/>
+        <location filename="../lib/x509v3ext.cpp" line="+80"/>
         <source>String &apos;%1&apos; for &apos;%2&apos; contains invalid characters</source>
         <translation>La chaîne &apos;%1&apos; pour &apos;%2&apos; contient des caractères invalides</translation>
     </message>
@@ -3398,7 +3398,7 @@ En conséquence, il n&apos;a pas été importé</translation>
         <translation>Le processus QA a été arrêté par l&apos;utilisateur.</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+18"/>
         <source>The key you selected for signing is not a private one.</source>
         <translation>La clé sélectionnée pour la signature n&apos;est pas une clé privée.</translation>
     </message>
@@ -3408,7 +3408,7 @@ En conséquence, il n&apos;a pas été importé</translation>
         <translation>Enregistrer le certificate avec la clé sur le jeton &apos;%1 (#%2)&apos; ?</translation>
     </message>
     <message>
-        <location line="+80"/>
+        <location line="+79"/>
         <source>PEM chain</source>
         <translation>Chaîne en PEM</translation>
     </message>
@@ -3654,13 +3654,13 @@ En conséquence, elle n&apos;a pas été chargée</translation>
         <translation>Impossible de charger le liste de révocation du fichier %1. Les formats PEM et DER ont été essayés.</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+37"/>
         <source>No issuer given</source>
         <translation>Aucun signataire spécifié</translation>
     </message>
     <message>
-        <location line="+54"/>
-        <location line="+218"/>
+        <location line="+64"/>
+        <location line="+286"/>
         <source>Wrong Size %1</source>
         <translation>Taille fausse %1</translation>
     </message>
@@ -3673,7 +3673,7 @@ En conséquence, elle n&apos;a pas été chargée</translation>
 <context>
     <name>pki_evp</name>
     <message>
-        <location filename="../lib/pki_evp.cpp" line="+180"/>
+        <location filename="../lib/pki_evp.cpp" line="+260"/>
         <source>Failed to decrypt the key (bad password) </source>
         <translation>Le décryptage de la clé a échoué (mauvais mot de passe). </translation>
     </message>
@@ -3683,7 +3683,7 @@ En conséquence, elle n&apos;a pas été chargée</translation>
         <translation>SVP saisir le mot de passe pour décrypter la clé privée</translation>
     </message>
     <message>
-        <location line="+55"/>
+        <location line="+68"/>
         <source>Please enter the password to decrypt the private key from file:
 %1</source>
         <translation>SVP saisir le mot de passe pour décrypter la clé privée du fichier:
@@ -3695,12 +3695,12 @@ En conséquence, elle n&apos;a pas été chargée</translation>
         <translation>Impossible de charger la clé privée du fichier %1. Les formats PEM et DER ainsi que les types de clés privé, public, PKCS#8 et le format SSH2 ont été essayés.</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+44"/>
         <source>Ignoring unsupported private key</source>
         <translation>Clé privée non-supportée: ignorée</translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+35"/>
         <source>Please enter the password to decrypt the private key: &apos;%1&apos;</source>
         <translation>SVP saisir le mot de passe pour décrypter la clé privée: &apos;%1&apos;</translation>
     </message>
@@ -3716,7 +3716,7 @@ En conséquence, elle n&apos;a pas été chargée</translation>
         <translation>SVP saisir le mot de basse de la base de données pour décrypter la clé &apos;%1&apos;</translation>
     </message>
     <message>
-        <location line="+85"/>
+        <location line="+103"/>
         <source>Please enter the password to protect the private key: &apos;%1&apos;</source>
         <translation>SVP saisir le mot de pass pour protéger la clé privée: &apos;%1&apos;</translation>
     </message>
@@ -3726,12 +3726,12 @@ En conséquence, elle n&apos;a pas été chargée</translation>
         <translation>SVP saisir le mot de passe de la base de données pour encrypter la clé</translation>
     </message>
     <message>
-        <location line="+83"/>
+        <location line="+91"/>
         <source>Please enter the password protecting the PKCS#8 key &apos;%1&apos;</source>
         <translation>SVP saisir le mot de passe protégeant la clé en PKCS#8 &apos;%1&apos;</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+36"/>
         <source>Please enter the export password for the private key &apos;%1&apos;</source>
         <translation>SVP saisir le mot de passe d&apos;exportation pour la clé privée &apos;%1&apos;</translation>
     </message>
@@ -3739,7 +3739,7 @@ En conséquence, elle n&apos;a pas été chargée</translation>
 <context>
     <name>pki_key</name>
     <message>
-        <location filename="../lib/pki_key.cpp" line="+142"/>
+        <location filename="../lib/pki_key.cpp" line="+157"/>
         <source>Successfully imported the %1 public key &apos;%2&apos;</source>
         <translation>Les %1 clés publiques &apos;%2&apos; ont été importées avec succès</translation>
     </message>
@@ -3774,7 +3774,7 @@ En conséquence, elle n&apos;a pas été chargée</translation>
         <translation>clé publique</translation>
     </message>
     <message>
-        <location line="+188"/>
+        <location line="+255"/>
         <source>Common</source>
         <translation>Global</translation>
     </message>
@@ -3806,7 +3806,7 @@ En conséquence, elle n&apos;a pas été chargée</translation>
         <translation>Clé publique SSH2 invalide</translation>
     </message>
     <message>
-        <location line="+113"/>
+        <location line="+155"/>
         <source>Failed writing to %1</source>
         <translation>Echec d&apos;écriture sur %1</translation>
     </message>
@@ -3846,7 +3846,7 @@ En conséquence, elle n&apos;a pas été chargée</translation>
         <translation>Le mot de passe renseigné était faux (%1)</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+58"/>
         <source>Please enter the password to encrypt the PKCS#12 file</source>
         <translation>SVP saisir le mot de passe pour encrypter le fichier en PKCS#12</translation>
     </message>
@@ -3887,17 +3887,17 @@ En conséquence, elle n&apos;a pas été chargée</translation>
         <translation>Détruire les %1 clés: &apos;%2&apos; ?</translation>
     </message>
     <message>
-        <location line="+226"/>
+        <location line="+272"/>
         <source>Delete the private key &apos;%1&apos; from the token &apos;%2 (#%3)&apos; ?</source>
         <translation>Détruire la clé privée &apos;%1&apos; sur le jeton &apos;%2 (#%3)&apos; ?</translation>
     </message>
     <message>
-        <location line="+65"/>
+        <location line="+74"/>
         <source>This Key is already on the token</source>
         <translation>Cette clé est déjà sur le jeton</translation>
     </message>
     <message>
-        <location line="+75"/>
+        <location line="+110"/>
         <source>PIN input aborted</source>
         <translation>Saisie du NIP abandonnée</translation>
     </message>
@@ -3907,7 +3907,7 @@ En conséquence, elle n&apos;a pas été chargée</translation>
         <translation>Impossible de trouver la clé copiée sur le jeton</translation>
     </message>
     <message>
-        <location line="+103"/>
+        <location line="+111"/>
         <source>Please insert card: %1 %2 [%3] with Serial: %4</source>
         <translation>SVP insérer la carte %1 %2 [%3] avec le numéro de série: %4</translation>
     </message>
@@ -3927,12 +3927,12 @@ En conséquence, elle n&apos;a pas été chargée</translation>
         <translation>Impossible de trouver la clé générée sur la carte</translation>
     </message>
     <message>
-        <location line="+51"/>
+        <location line="+60"/>
         <source>Ignoring unsupported token key</source>
         <translation>La clé non-supportée sur le jeton est ignorée</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+3"/>
         <source>Wrong Size %1</source>
         <translation>Taille fausse %1</translation>
     </message>
@@ -4040,7 +4040,7 @@ En conséquence, elle n&apos;a pas été chargée</translation>
         <translation>Impossible de charge le certificat du fichier %1. Les formats PEM et DER ont été essayés.</translation>
     </message>
     <message>
-        <location line="+170"/>
+        <location line="+200"/>
         <source>This certificate is already on the security token</source>
         <translation>Ce certificat est déjà dans le jeton de sécurité</translation>
     </message>
@@ -4050,13 +4050,13 @@ En conséquence, elle n&apos;a pas été chargée</translation>
         <translation>Détruire le certificat &apos;%1&apos; sur le jeton &apos;%2 (#%3)&apos; ?</translation>
     </message>
     <message>
-        <location line="+129"/>
+        <location line="+149"/>
         <source>There is no key for signing !</source>
         <translation>Il n&apos;y a pas de clé pour signer !</translation>
     </message>
     <message>
         <location line="+58"/>
-        <location line="+538"/>
+        <location line="+556"/>
         <source>Wrong Size %1</source>
         <translation>Taille fausse %1</translation>
     </message>
@@ -4119,7 +4119,7 @@ En conséquence, elle n&apos;a pas été chargée</translation>
         <translation>Impossible de charger la requête de signature du fichier %1. Les formats PEM, DER et SPKAC ont été essayés.</translation>
     </message>
     <message>
-        <location line="+282"/>
+        <location line="+322"/>
         <source>Signed</source>
         <translation>Signé</translation>
     </message>

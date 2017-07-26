@@ -1,8 +1,8 @@
 AC_INIT([X Certificate and Key management],
 	m4_esyscmd([tr -d '\n' < VERSION]),
-	[christian@hohnstaedt.de],
+	[i.rakhlin@gmail.com],
 	[xca],
-	[http://xca.hohnstaedt.de])
+	[https://github.com/irakhlin/xca])
 AC_MSG_NOTICE([     ***************************************************])
 AC_MSG_NOTICE([     *   ${PACKAGE_NAME} ${PACKAGE_VERSION}])
 AC_MSG_NOTICE([     ***************************************************])
@@ -12,6 +12,7 @@ AC_CHECK_TOOL(STRIP, [strip], [:])
 
 DVERSION="`${CXX} --version | grep apple-darwin || :`"
 case "$DVERSION" in
+  *-apple-darwin15*) DARWIN="El Capitan" ;;
   *-apple-darwin14*) DARWIN="Yosemite" ;;
   *-apple-darwin13*) DARWIN="Mavericks" ;;
   *-apple-darwin12*) DARWIN="Mountain Lion" ;;
@@ -185,7 +186,7 @@ LIBS="${LIBS} ${OPENSSL_LIBS} ${QT_LIBS}"
 
 XCA_COMPILE_TEST()
 
-AX_CHECK_GNU_MAKE()
+# AX_CHECK_GNU_MAKE()
 
 # linuxdoc application detection
 ##################################

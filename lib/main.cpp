@@ -12,6 +12,8 @@
 #include <QDir>
 #include <QDirIterator>
 #include <QFile>
+#include <QStyleFactory>
+#include <QPalette>
 #include <QDebug>
 #include <openssl/rand.h>
 #include "widgets/MainWindow.h"
@@ -21,6 +23,12 @@
 #include "lib/entropy.h"
 #ifdef WIN32
 #include <windows.h>
+#ifdef OPENSSL_SYS_WIN32
+/* Under Win32 these are defined in wincrypt.h */
+#undef X509_NAME
+#undef X509_CERT_PAIR
+#undef X509_EXTENSIONS
+#endif
 #endif
 
 QLocale XCA_application::lang = QLocale::system();

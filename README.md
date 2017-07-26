@@ -1,6 +1,6 @@
 # XCA -- X Certificate and Key Management
 
-##__Additional Notes__
+## __Additional Notes__
 
  * This is a copy of the repository found here https://sourceforge.net/p/xca/code all original work was done by the creators
  * This repository is to track some minor updates and changes that would allow for use of openssl 1.1.0 and fully build with QT5 as it seems original work has stoped
@@ -11,6 +11,15 @@
 
 ## __Changelog:__
 
+### xca 1.3.3
+
+ * Migrated to github branch to continue updated: https://github.com/irakhlin/xca
+ * Windows: Libtool library libltdl updated to 2.4.6
+ * Windows: updated to Openssl 1.1.0f
+ * Windows: Modifications to base path detection to conform and build with unicode
+ * Windows: built using mingw64 toolchain for 64bit support and minor modifications for headers to work correctly
+ * Windows: Update to use QT5.8-static (mingw-w64-x86_64-qt5-static) from msys2 package
+ * Windows: Build release version as full static binary for both xca.exe and xca_db_stat.exe
 
 ### xca 1.3.2
 
